@@ -5,4 +5,8 @@ require "fontpix"
 
 painter = Fontpix::Writer.new
 painter.font = "KouzanBrushFontOTF"
-painter.write_to_png("初夢や金も拾はず死にもせず", "sample.png")
+painter.write_to_png(<<-END_OF_TEXT, "sample.png")
+初夢や
+     金も拾はず
+           死にもせず
+END_OF_TEXT
