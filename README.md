@@ -1,12 +1,12 @@
-# Tanka
+# Fontpix
 
-A toolbox for tanka (31-mora Japanese poem).
+A drawing tool for fonts.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'tanka'
+    gem 'fontpix'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tanka
+    $ gem install fontpix
 
 ## Usage
 
@@ -22,7 +22,7 @@ See sample/.
 
 ## Contributing
 
-1. Fork it ( http://github.com/myokoym/tanka/fork )
+1. Fork it ( http://github.com/myokoym/fontpix/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

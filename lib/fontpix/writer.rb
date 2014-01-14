@@ -2,8 +2,8 @@ require "cairo"
 require "pango"
 require "fontdock"
 
-module Tanka
-  class Painter
+module Fontpix
+  class Writer
     attr_accessor :width, :height, :font
     attr_accessor :body_color, :text_color
     def initialize

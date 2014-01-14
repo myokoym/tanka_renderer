@@ -1,9 +1,9 @@
-require "tanka/painter"
+require "fontpix/painter"
 require "cairo"
 
 class PainterTest < Test::Unit::TestCase
   def setup
-    @painter = Tanka::Painter.new
+    @painter = Fontpix::Painter.new
   end
 
   class GuessFontTest < self
