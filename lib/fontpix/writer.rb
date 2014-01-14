@@ -45,7 +45,9 @@ module Fontpix
       layout.text = text
       size = calc_font_size(text)
       layout.font_description = Pango::FontDescription.new("#{@font} #{size}")
-      context.move_to(@width / 2 + size * text.each_line.to_a.length / 1.5, @height / 30)
+      x = @width / 2 + text.each_line.to_a.length * size / 1.5
+      y = @height / 30
+      context.move_to(x, y)
       context.rotate(Math::PI / 2)
       context.show_pango_layout(layout)
     end
