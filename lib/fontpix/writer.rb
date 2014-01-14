@@ -7,7 +7,7 @@ module Fontpix
     attr_accessor :width, :height, :font
     attr_accessor :body_color, :text_color
     def initialize
-      @width = 100
+      @width = 300
       @height = 500
       @font = "IPAMincho"
       @body_color = :white
@@ -43,11 +43,21 @@ module Fontpix
       layout = context.create_pango_layout
       layout.context.base_gravity = :east
       layout.text = text
-      size = @height * 0.7 / text.length
+      size = calc_font_size(text)
       layout.font_description = Pango::FontDescription.new("#{@font} #{size}")
-      context.move_to(@width / 2 + size / 1.5, @height / 30)
+      context.move_to(@width / 2 + size * text.each_line.to_a.length / 1.5, @height / 30)
       context.rotate(Math::PI / 2)
       context.show_pango_layout(layout)
+    end
+
+    def calc_font_size(text)
+      max_length = 0
+      text.each_line do |line|
+        length = line.scan(/[ -~]/).length
+        length += line.scan(/[^ -~]/).length * 2
+        max_length = length if length > max_length
+      end
+      @height * 1.4 / max_length
     end
   end
 end
