@@ -1,20 +1,20 @@
-require "fontpix/painter"
+require "fontpix/writer"
 require "cairo"
 
-class PainterTest < Test::Unit::TestCase
+class WriterTest < Test::Unit::TestCase
   def setup
-    @painter = Fontpix::Painter.new
+    @writer = Fontpix::Writer.new
   end
 
   class GuessFontTest < self
     def test_found
       part_of_name = "M"
-      assert_match(/#{part_of_name}/, @painter.guess_font(part_of_name))
+      assert_match(/#{part_of_name}/, @writer.guess_font(part_of_name))
     end
 
     def test_not_found
       part_of_name = "ABCDE12345"
-      assert_nil(@painter.guess_font(part_of_name))
+      assert_nil(@writer.guess_font(part_of_name))
     end
   end
 
@@ -30,7 +30,7 @@ class PainterTest < Test::Unit::TestCase
       assert_nothing_raised do
         Cairo::ImageSurface.new(:argb32, width, height) do |surface|
           Cairo::Context.new(surface) do |context|
-            @painter.draw(context, text)
+            @writer.draw(context, text)
           end
         end
       end
