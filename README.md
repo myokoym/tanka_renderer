@@ -28,6 +28,10 @@ Or install it yourself as:
 
 See sample/.
 
+### Sample Fonts
+
+[http://opentype.jp/freemouhitufont.htm](http://opentype.jp/freemouhitufont.htm)
+
 ## License
 
 Copyright (c) 2014 Masafumi Yokoyama
