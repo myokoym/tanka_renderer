@@ -3,10 +3,10 @@
 
 require "tanka_renderer"
 
-painter = TankaRenderer::Renderer::PDF.new
-painter.font = "KouzanBrushFontOTF"
-painter.vertical = true
-painter.render(<<-END_OF_TEXT, "sample.pdf")
+renderer = TankaRenderer::Renderer::PDF.new
+renderer.font = "KouzanBrushFontOTF"
+renderer.vertical = true
+renderer.render(<<-END_OF_TEXT, "sample.pdf")
 秋来ぬと目にはさやかに見えねども
 
 　　　　　風の音にぞおどろかれぬる
