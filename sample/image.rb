@@ -3,9 +3,9 @@
 
 require "tanka_renderer"
 
-painter = TankaRenderer::Renderer.new
+painter = TankaRenderer::Renderer::Image.new
 painter.font = "KouzanBrushFontOTF"
-painter.write_to_png(<<-END_OF_TEXT, "sample.png")
+painter.render(<<-END_OF_TEXT, "sample.png")
 初夢や
      金も拾はず
            死にもせず

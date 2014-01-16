@@ -1,9 +1,9 @@
 require "tanka_renderer/renderer"
 require "cairo"
 
-class WriterTest < Test::Unit::TestCase
+class RendererTest < Test::Unit::TestCase
   def setup
-    @renderer = TankaRenderer::Renderer.new
+    @renderer = TankaRenderer::Renderer::Image.new
   end
 
   class GuessFontTest < self
