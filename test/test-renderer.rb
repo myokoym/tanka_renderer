@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require "tanka_renderer/renderer"
 require "cairo"
 
@@ -36,6 +37,42 @@ class RendererTest < Test::Unit::TestCase
           end
         end
       end
+    end
+  end
+
+  class ImageTest < self
+    def setup
+      @renderer = TankaRenderer::Renderer::Image.new
+      @tmp_dir = File.join(File.dirname(__FILE__), "tmp")
+      FileUtils.mkdir_p(@tmp_dir)
+    end
+
+    def teardown
+      FileUtils.rm(Dir.glob(File.join(@tmp_dir, "*")))
+      FileUtils.rmdir(@tmp_dir)
+    end
+
+    def test_render
+      output_path = File.join(@tmp_dir, "test.png")
+      @renderer.render("南家", output_path)
+    end
+  end
+
+  class PDFTest < self
+    def setup
+      @renderer = TankaRenderer::Renderer::PDF.new
+      @tmp_dir = File.join(File.dirname(__FILE__), "tmp")
+      FileUtils.mkdir_p(@tmp_dir)
+    end
+
+    def teardown
+      FileUtils.rm(Dir.glob(File.join(@tmp_dir, "*")))
+      FileUtils.rmdir(@tmp_dir)
+    end
+
+    def test_render
+      output_path = File.join(@tmp_dir, "test.pdf")
+      @renderer.render("神薙", output_path)
     end
   end
 end
