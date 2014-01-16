@@ -4,10 +4,13 @@
 require "tanka_renderer"
 
 painter = TankaRenderer::Renderer::PDF.new
-painter.guess_font("KouzanBrushFont")
-painter.vertical = false
+painter.font = "KouzanBrushFontOTF"
+painter.vertical = true
 painter.render(<<-END_OF_TEXT, "sample.pdf")
-初夢や
-     金も拾はず
-           死にもせず
+秋来ぬと目にはさやかに見えねども
+
+　　　　　風の音にぞおどろかれぬる
+
+
+　　　　　　　　　　　　　　藤原敏行
 END_OF_TEXT
