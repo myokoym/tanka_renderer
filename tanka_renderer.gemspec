@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fontpix/version'
+require 'tanka_renderer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "fontpix"
-  spec.version       = Fontpix::VERSION
+  spec.name          = "tanka_renderer"
+  spec.version       = TankaRenderer::VERSION
   spec.authors       = ["Masafumi Yokoyama"]
   spec.email         = ["myokoym@gmail.com"]
-  spec.summary       = %q{Font drawing tool}
-  spec.description   = %q{A drawing tool for fonts.}
-  spec.homepage      = "https://github.com/myokoym/fontpix"
+  spec.summary       = %q{A rendering tool for short text}
+  spec.description   = %q{A rendering tool for short text such as tanka (31-mora Japanese poem).}
+  spec.homepage      = "https://github.com/myokoym/tanka_renderer"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

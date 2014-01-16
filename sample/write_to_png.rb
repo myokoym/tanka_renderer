@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 # -*- coding: utf-8 -*-
 
-require "fontpix"
+require "tanka_renderer"
 
-painter = Fontpix::Renderer.new
+painter = TankaRenderer::Renderer.new
 painter.font = "KouzanBrushFontOTF"
 painter.write_to_png(<<-END_OF_TEXT, "sample.png")
 初夢や

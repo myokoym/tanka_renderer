@@ -1,5 +1,5 @@
-require "fontpix/version"
-require "fontpix/renderer"
+require "tanka_renderer/version"
+require "tanka_renderer/renderer"
 
-module Fontpix
+module TankaRenderer
 end

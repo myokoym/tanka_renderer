@@ -2,7 +2,7 @@ require "cairo"
 require "pango"
 require "fontdock"
 
-module Fontpix
+module TankaRenderer
   class Renderer
     attr_accessor :width, :height, :font
     attr_accessor :body_color, :text_color

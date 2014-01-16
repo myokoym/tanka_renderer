@@ -1,9 +1,9 @@
-require "fontpix/writer"
+require "tanka_renderer/writer"
 require "cairo"
 
 class WriterTest < Test::Unit::TestCase
   def setup
-    @writer = Fontpix::Writer.new
+    @writer = TankaRenderer::Writer.new
   end
 
   class GuessFontTest < self

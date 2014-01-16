@@ -1,3 +1,3 @@
-module Fontpix
+module TankaRenderer
   VERSION = "0.0.1"
 end
