@@ -49,9 +49,9 @@ module TankaRenderer
         layout.font_description = Pango::FontDescription.new("#{@font} #{size}")
         if @vertical
           x = @width / 2 + text.each_line.to_a.length * size / 1.5
-          y = @height / 30
+          y = @height / 30 + size / 3
         else
-          x = @width / 30
+          x = @width / 30 + size / 3
           y = @height / 2 - text.each_line.to_a.length * size / 1.5
         end
         context.move_to(x, y)
