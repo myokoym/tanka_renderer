@@ -5,6 +5,10 @@ A rendering tool for short text such as tanka (31-mora Japanese poem).
 ![](http://myokoym.net/public/tanka_renderer-sample-tanka.png)
 ![](http://myokoym.net/public/tanka_renderer-sample-gyousyo.png)
 
+## Sample's Fonts
+
+[http://opentype.jp/freemouhitufont.htm](http://opentype.jp/freemouhitufont.htm)
+
 ## Using Libraries
 
 * [rcairo](https://github.com/rcairo/rcairo)
@@ -27,10 +31,6 @@ Or install it yourself as:
 ## Usage
 
 See sample/.
-
-### Sample's Fonts
-
-[http://opentype.jp/freemouhitufont.htm](http://opentype.jp/freemouhitufont.htm)
 
 ## License
 
