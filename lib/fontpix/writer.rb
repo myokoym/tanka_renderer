@@ -45,7 +45,7 @@ module Fontpix
       context.set_source_color(@text_color)
       layout = context.create_pango_layout
       if @vertical
-      layout.context.base_gravity = :east
+        layout.context.base_gravity = :east
       else
         layout.context.base_gravity = :south
       end
@@ -53,8 +53,8 @@ module Fontpix
       size = calc_font_size(text)
       layout.font_description = Pango::FontDescription.new("#{@font} #{size}")
       if @vertical
-      x = @width / 2 + text.each_line.to_a.length * size / 1.5
-      y = @height / 30
+        x = @width / 2 + text.each_line.to_a.length * size / 1.5
+        y = @height / 30
       else
         x = @width / 30
         y = @height / 2 - text.each_line.to_a.length * size / 1.5
@@ -72,7 +72,7 @@ module Fontpix
         max_length = length if length > max_length
       end
       if @vertical
-      @height * 1.4 / max_length
+        @height * 1.4 / max_length
       else
         @width * 1.4 / max_length
       end
