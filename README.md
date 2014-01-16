@@ -28,7 +28,7 @@ Or install it yourself as:
 
 See sample/.
 
-### Sample Fonts
+### Sample's Fonts
 
 [http://opentype.jp/freemouhitufont.htm](http://opentype.jp/freemouhitufont.htm)
 
