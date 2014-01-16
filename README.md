@@ -20,6 +20,14 @@ Or install it yourself as:
 
 See sample/.
 
+## License
+
+Copyright (c) 2014 Masafumi Yokoyama
+
+LGPLv3 or later.
+
+See 'license/lgpl-3.0.txt' or 'http://www.gnu.org/licenses/lgpl-3.0' for details.
+
 ## Contributing
 
 1. Fork it ( http://github.com/myokoym/tanka_renderer/fork )
