@@ -2,6 +2,11 @@
 
 A rendering tool for short text such as tanka (31-mora Japanese poem).
 
+## Using Libraries
+
+* [rcairo](https://github.com/rcairo/rcairo)
+* Ruby/Pango in [Ruby-GNOME2](http://ruby-gnome2.sourceforge.jp/)
+
 ## Installation
 
 Add this line to your application's Gemfile:
