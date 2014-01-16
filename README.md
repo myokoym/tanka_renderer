@@ -1,4 +1,4 @@
-# TankaRenderer
+# TankaRenderer [![Build Status](https://secure.travis-ci.org/myokoym/tanka_renderer.png?branch=master)](http://travis-ci.org/myokoym/tanka_renderer)
 
 A rendering tool for short text such as tanka (31-mora Japanese poem).
 
