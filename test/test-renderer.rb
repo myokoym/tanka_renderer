@@ -2,6 +2,7 @@ require "tanka_renderer/renderer"
 require "cairo"
 
 class RendererTest < Test::Unit::TestCase
+  class BaseTest < self
   def setup
     @renderer = TankaRenderer::Renderer::Image.new
   end
@@ -35,5 +36,6 @@ class RendererTest < Test::Unit::TestCase
         end
       end
     end
+  end
   end
 end
