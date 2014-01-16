@@ -2,6 +2,8 @@
 
 A rendering tool for short text such as tanka (31-mora Japanese poem).
 
+![](http://myokoym.net/public/tanka_renderer-sample.png)
+
 ## Using Libraries
 
 * [rcairo](https://github.com/rcairo/rcairo)
