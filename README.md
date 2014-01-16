@@ -3,7 +3,7 @@
 A rendering tool for short text such as tanka (31-mora Japanese poem).
 
 ![](http://myokoym.net/public/tanka_renderer-sample-tanka.png)
-![](http://myokoym.net/public/tanka_renderer-sample.png)
+![](http://myokoym.net/public/tanka_renderer-sample-gyousyo.png)
 
 ## Using Libraries
 

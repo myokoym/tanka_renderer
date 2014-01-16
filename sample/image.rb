@@ -4,7 +4,7 @@
 require "tanka_renderer"
 
 painter = TankaRenderer::Renderer::Image.new
-painter.font = "KouzanBrushFontOTF"
+painter.font = "KouzanBrushFontGyousyoOTF"
 painter.render(<<-END_OF_TEXT, "sample.png")
 春はあけぼの やう／＼しろく成り行く
 山ぎは すこしあかりて むらさきだちたる
