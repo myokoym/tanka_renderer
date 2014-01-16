@@ -3,7 +3,7 @@
 
 require "fontpix"
 
-painter = Fontpix::Writer.new
+painter = Fontpix::Renderer.new
 painter.font = "KouzanBrushFontOTF"
 painter.write_to_png(<<-END_OF_TEXT, "sample.png")
 初夢や

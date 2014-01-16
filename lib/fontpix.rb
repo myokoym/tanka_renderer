@@ -1,5 +1,5 @@
 require "fontpix/version"
-require "fontpix/writer"
+require "fontpix/renderer"
 
 module Fontpix
 end
