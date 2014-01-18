@@ -34,11 +34,11 @@ See sample/.
 
 ## License
 
-Copyright (c) 2014 Masafumi Yokoyama
+Copyright (c) 2014 Masafumi Yokoyama <myokoym@gmail.com>
 
-LGPLv3 or later.
+LGPLv2.1 or later.
 
-See 'license/lgpl-3.0.txt' or 'http://www.gnu.org/licenses/lgpl-3.0' for details.
+See 'license/lgpl-2.1.txt' or 'http://www.gnu.org/licenses/lgpl-2.1' for details.
 
 ## Contributing
 

@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{A rendering tool for short text}
   spec.description   = %q{A rendering tool for short text such as tanka (31-mora Japanese poem).}
   spec.homepage      = "https://github.com/myokoym/tanka_renderer"
-  spec.license       = "LGPLv3"
+  spec.license       = "LGPLv2.1 or later"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) {|f| File.basename(f) }
